@@ -1,0 +1,26 @@
+<header class="sticky top-0 z-50 bg-gray-100 h-screen">
+  <aside class="hidden sm:block">
+    <div class="w-full flex flex-col">
+      <div class="px-6 py-4 flex justify-center items-center">
+        <a [routerLink]="['']"><p class="text-md">HOME</p></a>
+      </div>
+      <div class="px-6 py-4 flex justify-center items-center">
+        <p class="text-md">PROFILE</p>
+      </div>
+      <div class="px-6 py-4 flex justify-center items-center">
+        <a [routerLink]="['user']"><p class="text-md">USERS</p></a>
+      </div>
+    </div>
+  </aside>
+
+  <div
+    class="block sm:hidden flex-col whitespace-nowrap justify-between p-4 shadow-lg bg-white"
+  >
+    <div class="flex">
+      <a routerLink="" class="flex-1">
+        <h2 class="logo transform underline underline-offset-8">LOGO XYZ</h2>
+      </a>
+      <h3 class="report-type transform">Reporting</h3>
+    </div>
+  </div>
+</header>
