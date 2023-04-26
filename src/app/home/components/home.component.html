@@ -1,1 +1,19 @@
-<p>home works!</p>
+<div class="px-4 sm:px-6 lg:px-8">
+  <div class="sm:flex sm:items-center">
+    <div class="sm:flex-auto">
+      <h1 class="text-base font-semibold leading-6 text-gray-900">Home</h1>
+      <p class="mt-2 text-sm text-gray-700">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ut
+        commodi.
+      </p>
+    </div>
+  </div>
+  <div id="chart" class="max-w-lg mt-12">
+    <apx-chart
+      [series]="chartOptions.series"
+      [chart]="chartOptions.chart"
+      [labels]="chartOptions.labels"
+      [responsive]="chartOptions.responsive"
+    ></apx-chart>
+  </div>
+</div>

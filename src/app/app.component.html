@@ -1,8 +1,14 @@
-<div class="sm:flex">
-  <div class="sm:w-2/12">
-    <app-sidebar></app-sidebar>
-  </div>
-  <main class="flex-auto sm:w-8/12 bg-white h-screen">
-    <router-outlet #outlet="outlet"></router-outlet>
+<div>
+  <app-sidebar
+    (emitNavState)="this.changeNavMobileState($event)"
+    [state]="this.mobileNavState"
+  ></app-sidebar>
+  <main class="lg:pl-72">
+    <app-topbar (emitNavState)="this.changeNavMobileState($event)"></app-topbar>
+    <main class="py-10">
+      <div class="px-4 sm:px-6 lg:px-8">
+        <router-outlet #outlet="outlet"></router-outlet>
+      </div>
+    </main>
   </main>
 </div>
